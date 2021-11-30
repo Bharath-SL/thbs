@@ -1,0 +1,8 @@
+---
+- name: to create a file
+  hosts: all
+  tasks:
+   - name: create a file in tmp directory
+     file:
+      path: '/tmp/surekha.txt'
+      state: touch
